@@ -4,13 +4,13 @@ public class Lamp {
 
     private boolean isOn = false;
     private int intensity = 0;
-    private Bulb bulb;
+    private Bulb bulb = new Bulb();
 
     public void turnOn() {
         if(!bulb.isBurned()) {
-            this.isOn = true;
             bulb.turnOn();
         }
+        this.isOn = true;
 
         if (intensity == 0)
             intensity = 1;
@@ -35,7 +35,7 @@ public class Lamp {
         if (isOn) {
             intensity--;
         }
-        if (intensity <= 1) {
+        if (intensity < 1) {
             intensity = 0;
             turnOff();
         }
@@ -52,7 +52,7 @@ public class Lamp {
         return this.isOn;
     }
     public boolean isShining() {
-        return bulb.isOn() && intensity == 0 && bulb.isOn() == true;
+        return bulb.isOn() && intensity > 0 && isOn();
     }
     public boolean isBulbBurned() {
         return bulb.isBurned();
