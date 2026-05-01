@@ -2,7 +2,7 @@
 ## Course Information
 - Course Name: Introduction to mobile system
 - Lab Number: 4-6
-- Student Name: Tsimafe Mardashou
+- Student Name: Tsimafei Mardashou
 - Student ID: 46011
 ## Description
 - Simulates a lamp system using two classes: Lamp and Bulb
