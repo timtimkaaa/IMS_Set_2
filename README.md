@@ -1,7 +1,7 @@
 # Lamp & Bulb Android App
 ## Course Information
 - Course Name: Introduction to mobile system
-- Lab Number: 4-6
+- Set Number: 2
 - Student Name: Tsimafei Mardashou
 - Student ID: 46011
 ## Description
